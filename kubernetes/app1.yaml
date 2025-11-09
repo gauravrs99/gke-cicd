@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: ap-south1-docker.pkg.dev/tidy-amplifier-477616-d8/gke-repo/quickstart-image
+          image: asia-south1-docker.pkg.dev/tidy-amplifier-477616-d8/gke-repo/quickstart-image
           ports:
             - containerPort: 8080
 
