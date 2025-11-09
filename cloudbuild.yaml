@@ -1,24 +1,24 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'ap-south1-docker.pkg.dev/<your_project_id>/gke-repo/quickstart-image', './app1' ]
+  args: ['build', '-t', 'ap-south1-docker.pkg.dev/tidy-amplifier-477616-d8/gke-repo/quickstart-image', './app1' ]
   id: 'Build Docker Image'
 
   # images:
-  # - 'ap-south1-docker.pkg.dev/<your_project_id>/gke-repo/quickstart-image'
+  # - 'ap-south1-docker.pkg.dev/tidy-amplifier-477616-d8/gke-repo/quickstart-image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'ap-south1-docker.pkg.dev/<your_project_id>/gke-repo/quickstart-image' ]
+  args: ['push', 'ap-south1-docker.pkg.dev/tidy-amplifier-477616-d8/gke-repo/quickstart-image' ]
   id: 'Push Docker Image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'ap-south1-docker.pkg.dev/<your_project_id>/gke-repo/flask-image', './app2' ]
+  args: ['build', '-t', 'ap-south1-docker.pkg.dev/tidy-amplifier-477616-d8/gke-repo/flask-image', './app2' ]
   id: 'Build Docker Image2'
 
   # images:
-  # - 'ap-south1-docker.pkg.dev/<your_project_id>/gke-repo/quickstart-image'
+  # - 'ap-south1-docker.pkg.dev/tidy-amplifier-477616-d8/gke-repo/quickstart-image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'ap-south1-docker.pkg.dev/<your_project_id>/gke-repo/flask-image' ]
+  args: ['push', 'ap-south1-docker.pkg.dev/tidy-amplifier-477616-d8/gke-repo/flask-image' ]
   id: 'Push Docker Image2'
 
 
