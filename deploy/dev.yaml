@@ -6,5 +6,5 @@ metadata:
   labels: {}
 description: dev
 gke:
-  cluster: projects/tidy-amplifier-477616-d8/locations/ap-south1/clusters/gs-cluster-1
+  cluster: projects/tidy-amplifier-477616-d8/locations/asia-south1/clusters/gs-cluster-1
 
